@@ -1,0 +1,10 @@
+shadowsocks:
+  build: .
+  ports:
+    - "33370:33370/tcp"
+    - "33370:33370/udp"
+  environment:
+    - METHOD=xchacha20-ietf-poly1305
+    - PASSWORD=9MLSpPmNt
+    - SERVER_PORT=33370
+  restart: always
